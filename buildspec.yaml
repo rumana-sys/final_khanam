@@ -3,7 +3,7 @@ version: 0.2
 env:
   variables:
     AWS_DEFAULT_REGION: "ca-central-1"
-    REPOSITORY_URI: "445567079138.dkr.ecr.ca-central-1.amazonaws.com/khanam-ecr"
+    REPOSITORY_URI: "445567079138.dkr.ecr.ca-central-1.amazonaws.com/khanam-final-ecr"
 
 phases:
   pre_build:
@@ -31,7 +31,7 @@ phases:
       - |
         echo '[ 
           { 
-            "name": "khanam-ecr", 
+            "name": "khanam-final-ecr", 
             "imageUri": "'$REPOSITORY_URI:$IMAGE_TAG'" 
           } 
         ]' > imagedefinitions.json
